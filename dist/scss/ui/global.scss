@@ -1,0 +1,107 @@
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right;
+}
+
+.ease-out {
+  transition: all 0.3s;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.width-window {
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - #{map-get($container-max-widths, "xl")}) / 2);
+}
+
+.negative-offset-20 {
+  transform: translateY(-20px);
+}
+
+.z-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.shadow {
+  @include shadow(2px 1px 5px, 0.1);
+}
+
+@include media-breakpoint-down(sm) {
+  .mob-p-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content-padding {
+  padding: $spacer-default $spacer-default * 2;
+
+  @include media-breakpoint-down(md) {
+    padding: $spacer-default $spacer-default;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $spacer-default $spacer-default/2;
+  }
+}
+
+.icon-small {
+  width: auto;
+  height: 16px;
+}
+
+.icon-medium {
+  width: auto;
+  max-width: 80px;
+  max-height: 32px;
+}
+
+.icon-big {
+  width: auto;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.circleChart_text {
+  left: 2px;
+}
+
+.icon-default {
+  font-size: 1.7rem;
+}
+
+.icon-tiny {
+  font-size: 1.25rem;
+}

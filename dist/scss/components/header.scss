@@ -1,0 +1,42 @@
+header{
+	border-bottom: solid 5px $primary;
+	font-family: $font-family-base;
+	display: flex;
+	align-items: center;
+	min-height: $nav-height;
+  
+	.logo-img{
+		max-width: 200px;
+	}
+
+	&.header-account {
+		border: none;		display: block;
+
+		.logo-img{
+			max-width: 250px;
+			margin: 2rem 0;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 10px 0px;
+		
+    .logo-img {
+      max-width: 160px;
+    }
+	}
+}
+
+.header-account-sidebar {
+	background-color: $cover;
+	padding: 0.5rem 0;
+}
+
+.header-profile-section {
+	display: flex;
+	align-items: center;
+
+	>* {
+		margin-left: 1rem;
+	}
+}

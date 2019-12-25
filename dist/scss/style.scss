@@ -1,0 +1,29 @@
+@import "ui/variables";
+@import "ui/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "ui/global";
+@import "ui/fonts";
+@import "ui/bootstrap";
+@import "ui/buttons";
+@import "ui/inputs";
+@import "ui/selects";
+@import "ui/checkbox";
+@import "ui/texts";
+@import "ui/table";
+@import "ui/widgets";
+
+@import "components/content";
+@import "components/modal";
+@import "components/filters";
+@import "components/header";
+@import "components/top-bar";
+@import "components/map";
+@import "components/banner";
+@import "components/footer";
+@import "components/collection";
+@import "components/service";
+@import "components/service-information";
+@import "components/book-now";
+@import "components/account";
+@import "components/parcel";
